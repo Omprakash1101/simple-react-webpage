@@ -1,0 +1,137 @@
+.navba {
+    justify-content: end;
+    padding-right: 2%;
+    background-color: whitesmoke;
+    color: greenyellow;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+  }
+  .root{
+    padding: 0%;
+    background-color: whitesmoke;
+    color: greenyellow;
+  }
+
+li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: greenyellow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: whitesmoke;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  .navbar-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    padding-right: 2%;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    top: 0%;
+    left: 0;
+    max-width: 0%;
+    background-color: whitesmoke;
+    padding: 0rem;
+    transition: 1s ease-in-out;
+    max-height: 90px;
+    overflow: hidden;
+  }
+  
+  .navbar-menu.active {
+    padding-left:40rem;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%; /* Adjust as needed */
+  }
+  
+  .navbar-items {
+    display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      margin-top: 1rem;
+  }
+  
+  .navbar-item {
+    margin-bottom: 1rem;
+  }
+  
+  .navbar-item a {
+    color: greenyellow;
+    text-decoration: none;
+  }
+  
+  .navbar-toggle {
+    display: flex;
+    float:right;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: greenyellow;
+    margin: 3px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-menu {
+      position: static;
+      max-height: none;
+      overflow: visible;
+      flex-direction: row;
+      background-color: transparent;
+      justify-content: space-between;
+      width: auto;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+    }
+  
+    .navbar-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .navbar-item {
+      margin-bottom: 0.5rem;
+    }
+  
+    .navbar-item a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  }
+  
