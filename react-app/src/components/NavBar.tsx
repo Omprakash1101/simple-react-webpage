@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import './Navbar.css';// Import CSS for styling
 import Slider from './Slider';
+import Intro from './Intro';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,9 +12,10 @@ const NavBar = () => {
 
   return (
     <Fragment>
-          <nav className="navba">
+      <header>
+           <img src="https://codetheweb.blog/assets/img/icon2.png" />
+            <nav className='navba'>
       <div className="navbar-container">
-        <div className="navbar-logo">Logo</div>
         <div className={isOpen ? 'navbar-menu active': 'navbar-menu'}>
           <ul className="navbar-items">
             <li className="navbar-item"><a href="#home">Home</a></li>
@@ -31,8 +33,9 @@ const NavBar = () => {
           <span className="bar"></span>
         </div>
       </div>
-    </nav>
+    </nav></header>
     <Slider />
+    <Intro />
    </Fragment>
   );
 };

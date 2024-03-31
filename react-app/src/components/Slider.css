@@ -1,0 +1,21 @@
+.card-sld{
+    padding-top: 10rem;
+}
+
+.pad{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:200px;
+    left:200px;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+p .i{
+    font-weight: 500;
+    font-size: 50px;
+}
+h1, .e1 {
+    font-size: 70px;
+}

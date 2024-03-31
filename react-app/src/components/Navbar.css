@@ -1,8 +1,9 @@
 .navba {
-    justify-content: end;
+    justify-content: flex-end;
+    align-items: end;
     padding-right: 2%;
     background-color: whitesmoke;
-    color: greenyellow;
+    color: green;
   }
   
   ul {
@@ -15,7 +16,7 @@
   .root{
     padding: 0%;
     background-color: whitesmoke;
-    color: greenyellow;
+    color: green;
   }
 .im{
     justify-content: center;
@@ -26,7 +27,7 @@ li {
   
   li a {
     display: block;
-    color: greenyellow;
+    color: green;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -66,7 +67,6 @@ li {
   }
   
   .navbar-menu.active {
-    padding-left:40rem;
     overflow: hidden;
     position: relative;
     max-width: 100%; /* Adjust as needed */
@@ -85,7 +85,7 @@ li {
   }
   
   .navbar-item a {
-    color: greenyellow;
+    color: green;
     text-decoration: none;
   }
   
@@ -99,7 +99,7 @@ li {
   .bar {
     width: 25px;
     height: 3px;
-    background-color: greenyellow;
+    background-color: green;
     margin: 3px 0;
   }
   
@@ -131,23 +131,50 @@ li {
     }
   
     .navbar-item a {
-      color: #fff;
+      color: green;
       text-decoration: none;
       font-size: 1.2rem;
     }
   }
   
 
-  .image-slider {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-  }
-  .image-slider .slick-dots {
-    bottom: -30px;
-  }
-  .image-slider img {
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-  }
+  header img {
+    height: 80px;
+}
+
+main {
+    color: white;
+}
+
+header {
+  background-color: whitesmoke;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .navba {
+  justify-content: flex-end;
+  align-items: end;
+  padding-right: 2%;
+  background-color: whitesmoke;
+  color: green;
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  font-weight: 500;
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
